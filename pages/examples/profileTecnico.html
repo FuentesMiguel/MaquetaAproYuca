@@ -259,7 +259,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Perfil Usuario</h1>
+            <h1>Perfil Tecnico</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -275,6 +275,7 @@
     <section class="content">
       <div class="container-fluid">
         <div class="row">
+
           <div class="col-md-3">
 
             <!-- Profile Image -->
@@ -288,21 +289,22 @@
 
                 <h3 class="profile-username text-center">Richar Monzón</h3>
 
-                <p class="text-muted text-center">Productor Agricola</p>
+                <p class="text-muted text-center">Tecnico Agricola</p>
 
                 <ul class="list-group list-group-unbordered mb-3">
                   <li class="list-group-item">
-                    <p class="text-center"> <b>Hectáreas</b></p>
+                    <p class="text-center"> <b>Codigo</b>
+                      <span class="badge badge-success">#1234567890</p>
                   </li>
                   <li class="list-group-item">
-                    <b>Disponibles</b> <a class="float-right">1,322</a>
+                    <b>Disponibilidad</b> <span class="badge badge-success"><i class="fas fa-check-circle"></i></span>
                   </li>
                   <li class="list-group-item">
                     <b>Produccion</b> <a class="float-right">543</a>
                   </li>
                 </ul>
 
-                <a href="#" class="btn btn-primary btn-block"><b>Asignar Plan de Siembra</b></a>
+                <a href="#" class="btn btn-primary btn-block"><b>Asignar Productor Agricola</b></a>
               </div>
               <!-- /.card-body -->
             </div>
@@ -352,14 +354,79 @@
             <!-- /.card -->
           </div>
           <!-- /.col -->
+
           <div class="col-md-9">
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Tareas cumplidas por el tecnico</h3>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body p-0">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th style="width: 10px">#</th>
+                      <th>Tarea</th>
+                      <th>Progreso</th>
+                      <th style="width: 40px">Etiqueta</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1.</td>
+                      <td>Informacion del productor</td>
+                      <td>
+                        <div class="progress progress-xs">
+                          <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
+                        </div>
+                      </td>
+                      <td><span class="badge bg-danger">55%</span></td>
+                    </tr>
+                    <tr>
+                      <td>2.</td>
+                      <td>Informacion General de la Finca</td>
+                      <td>
+                        <div class="progress progress-xs">
+                          <div class="progress-bar bg-warning" style="width: 70%"></div>
+                        </div>
+                      </td>
+                      <td><span class="badge bg-warning">70%</span></td>
+                    </tr>
+                    <tr>
+                      <td>3.</td>
+                      <td>Realizar y controlar las labores de cuidado y protección de los cultivos.</td>
+                      <td>
+                        <div class="progress progress-xs progress-striped active">
+                          <div class="progress-bar bg-primary" style="width: 30%"></div>
+                        </div>
+                      </td>
+                      <td><span class="badge bg-primary">30%</span></td>
+                    </tr>
+                    <tr>
+                      <td>4.</td>
+                      <td>Realizar y controlar las operaciones de cosecha</td>
+                      <td>
+                        <div class="progress progress-xs progress-striped active">
+                          <div class="progress-bar bg-success" style="width: 90%"></div>
+                        </div>
+                      </td>
+                      <td><span class="badge bg-success">90%</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.card-body -->
+            </div>
+
             <div class="card">
               <div class="card-header p-2">
                 <ul class="nav nav-pills">
-                  <li class="nav-item"><a class="nav-link active" href="#activity" data-toggle="tab">Actividad</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#timeline" data-toggle="tab">
-Línea de Tiempo</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#settings" data-toggle="tab">Datos Personales</a></li>
+                  <li class="nav-item"><a class="nav-link active" href="#activity" data-toggle="tab">Actividad</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link" href="#timeline" data-toggle="tab">Línea de Tiempo</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link" href="#settings" data-toggle="tab">Datos Personales</a>
+                  </li>
                 </ul>
               </div><!-- /.card-header -->
               <div class="card-body">
@@ -575,47 +642,36 @@ Línea de Tiempo</a></li>
                   <!-- /.tab-pane -->
 
                   <div class="tab-pane" id="settings">
-                    <form class="form-horizontal">
-                      <div class="form-group row">
-                        <label for="inputName" class="col-sm-2 col-form-label">Nombre y Apellido</label>
-                        <div class="col-sm-10">
-                          <input type="email" class="form-control" id="inputName" placeholder="Nombre y Apellido">
-                        </div>
+                    <div class="card bg-light d-flex flex-fill">
+                      <div class="card-header text-muted border-bottom-0">
+                        Digital Strategist
                       </div>
-                      <div class="form-group row">
-                        <label for="inputEmail" class="col-sm-2 col-form-label">Estado</label>
-                        <div class="col-sm-10">
-                          <input type="email" class="form-control" id="inputEmail" placeholder="Estado">
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label for="inputEmail" class="col-sm-2 col-form-label">Municipio</label>
-                        <div class="col-sm-10">
-                          <input type="email" class="form-control" id="inputEmail" placeholder="Municipio">
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label for="inputName2" class="col-sm-2 col-form-label">Cedula Agraria</label>
-                        <div class="col-sm-10">
-                          <input type="text" class="form-control" id="inputName2" placeholder="Cedula Agraria">
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label for="inputExperience" class="col-sm-2 col-form-label">Experiencia</label>
-                        <div class="col-sm-10">
-                          <textarea class="form-control" id="inputExperience" placeholder="Experience"></textarea>
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <div class="offset-sm-2 col-sm-10">
-                          <div class="checkbox">
-                            <label>
-                              <input type="checkbox">Asociado a <a href="https://asonaproyucadevenezuela.site/"> AsonaProYucadeVenezuela</a>
-                            </label>
+                      <div class="card-body pt-0">
+                        <div class="row">
+                          <div class="col-7">
+                            <h2 class="lead"><b>Nicole Pearson</b></h2>
+                            <p class="text-muted text-sm"><b>About: </b> Web Designer / UX / Graphic Artist / Coffee Lover </p>
+                            <ul class="ml-4 mb-0 fa-ul text-muted">
+                              <li class="small"><span class="fa-li"><i class="fas fa-lg fa-building"></i></span> Address: Demo Street 123, Demo City 04312, NJ</li>
+                              <li class="small"><span class="fa-li"><i class="fas fa-lg fa-phone"></i></span> Phone #: + 800 - 12 12 23 52</li>
+                            </ul>
+                          </div>
+                          <div class="col-5 text-center">
+                            <img src="../../dist/img/user1-128x128.jpg" alt="user-avatar" class="img-circle img-fluid">
                           </div>
                         </div>
                       </div>
-                    </form>
+                      <div class="card-footer">
+                        <div class="text-right">
+                          <a href="#" class="btn btn-sm bg-teal">
+                            <i class="fas fa-comments"></i>
+                          </a>
+                          <a href="#" class="btn btn-sm btn-primary">
+                            <i class="fas fa-user"></i> View Profile
+                          </a>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <!-- /.tab-pane -->
                 </div>
