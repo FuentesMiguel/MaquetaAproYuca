@@ -302,7 +302,7 @@
                   </li>
                 </ul>
 
-                <a href="#" class="btn btn-primary btn-block"><b>Asignar Plan de Siembra</b></a>
+                <a href="#" class="btn btn-primary btn-block"><b>Solicitud del Plan de Siembra</b></a>
               </div>
               <!-- /.card-body -->
             </div>
@@ -358,7 +358,7 @@
                 <ul class="nav nav-pills">
                   <li class="nav-item"><a class="nav-link active" href="#activity" data-toggle="tab">Actividad</a></li>
                   <li class="nav-item"><a class="nav-link" href="#timeline" data-toggle="tab">
-Línea de Tiempo</a></li>
+Area de Trabajo</a></li>
                   <li class="nav-item"><a class="nav-link" href="#settings" data-toggle="tab">Datos Personales</a></li>
                 </ul>
               </div><!-- /.card-header -->
@@ -577,6 +577,18 @@ Línea de Tiempo</a></li>
                   <div class="tab-pane" id="settings">
                     <form class="form-horizontal">
                       <div class="form-group row">
+                        <label for="inputName" class="col-sm-2 col-form-label">Cedula</label>
+                        <div class="col-sm-10">
+                          <input type="email" class="form-control" id="inputName" placeholder="cedula de identidad">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="inputName" class="col-sm-2 col-form-label">Codigo</label>
+                        <div class="col-sm-10">
+                          <input type="email" class="form-control" id="inputName" placeholder="codigo">
+                        </div>
+                      </div>
+                      <div class="form-group row">
                         <label for="inputName" class="col-sm-2 col-form-label">Nombre y Apellido</label>
                         <div class="col-sm-10">
                           <input type="email" class="form-control" id="inputName" placeholder="Nombre y Apellido">
@@ -594,23 +606,52 @@ Línea de Tiempo</a></li>
                           <input type="email" class="form-control" id="inputEmail" placeholder="Municipio">
                         </div>
                       </div>
+
+                      <div class="form-group row">
+                        <label for="inputEmail" class="col-sm-2 col-form-label">Parroquia</label>
+                        <div class="col-sm-10">
+                          <input type="email" class="form-control" id="inputEmail" placeholder="Parroquia">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="inputEmail" class="col-sm-2 col-form-label">Sector</label>
+                        <div class="col-sm-10">
+                          <input type="email" class="form-control" id="inputEmail" placeholder="Sector">
+                        </div>
+                      </div>
                       <div class="form-group row">
                         <label for="inputName2" class="col-sm-2 col-form-label">Cedula Agraria</label>
                         <div class="col-sm-10">
-                          <input type="text" class="form-control" id="inputName2" placeholder="Cedula Agraria">
+                          <input type="text" class="form-control" id="inputName2" placeholder="Cedula Agricola">
                         </div>
                       </div>
+
                       <div class="form-group row">
-                        <label for="inputExperience" class="col-sm-2 col-form-label">Experiencia</label>
+                        <label for="inputExperience" class="col-sm-2 col-form-label">Cantidad de superficie disponible</label>
                         <div class="col-sm-10">
-                          <textarea class="form-control" id="inputExperience" placeholder="Experience"></textarea>
+                          <textarea class="form-control" id="inputExperience" placeholder="superficie disponible"></textarea>
                         </div>
                       </div>
+
+                      <div class="form-group row">
+                        <label for="inputExperience" class="col-sm-2 col-form-label">Observaciones</label>
+                        <div class="col-sm-10">
+                          <textarea class="form-control" id="inputExperience" placeholder="Observaciones"></textarea>
+                        </div>
+                      </div>
+
                       <div class="form-group row">
                         <div class="offset-sm-2 col-sm-10">
                           <div class="checkbox">
                             <label>
-                              <input type="checkbox">Asociado a <a href="https://asonaproyucadevenezuela.site/"> AsonaProYucadeVenezuela</a>
+                              <a href="https://asonaproyucadevenezuela.site/"> U.T.M Ubicacion</a>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="offset-sm-2 col-sm-10">
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox"> Asociado a <a href="https://asonaproyucadevenezuela.site/"> AsonaProYuca de Venezuela</a>
                             </label>
                           </div>
                         </div>
